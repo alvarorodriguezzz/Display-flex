@@ -16,6 +16,7 @@
   height: 100px;
   margin: 10px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -33,6 +34,11 @@ a:hover {
 img {
   height: 200px;
   width: 200px;
+}
+
+.grid-item{
+  display: flex;
+  justify-content: center;
 }
 
 /*Pantalla grande*/
@@ -56,3 +62,4 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
