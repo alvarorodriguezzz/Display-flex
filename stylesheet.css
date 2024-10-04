@@ -1,145 +1,59 @@
-/* Reset de estilos básicos */
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-/* Estilo para el contenedor de navegación */
+
 .cont1 {
+  /*margin-top: 10%;*/
   display: flex;
   justify-content: space-around;
-  box-shadow: 0 0 16px rgba(30, 30, 30, 0.5);
-  /* Mejor uso de box-shadow */
+  box-shadow: 0 0 16px #1e1e1e;
 }
 
-/* Estilo para el elemento nav */
-nav {
-  background-color: #9A7197;
-  /* Puedes ajustar el color según prefieras */
+
+.item {
+  width: 10%;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center1;
+  align-items: center;
 }
 
-/* Estilo para el body */
-body {
-  background-color: #9D96B8;
-  /* Puedes ajustar el color según prefieras */
-  font-family: Arial, sans-serif;
-  transition: filter 0.5s ease;
-  /* Transición para el filtro gris */
+a {
+  text-decoration: none;
 }
 
-/* Estilo para las imágenes (cuadradas por defecto) */
+a:hover {
+  background-color: lightblue;
+}
+
+
+/* row start/column start/row end /column end */
+
 img {
   height: 200px;
   width: 200px;
-  object-fit: cover;
-  /* Asegura que la imagen cubra el contenedor sin distorsión */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Corrección de box-shadow */
-  border-radius: 0;
-  /* Cuadrado por defecto */
-  transition: border-radius 0.5s ease, transform 0.3s ease;
 }
 
-/* Estilo para las imágenes al pasar el ratón */
-img:hover {
-  height: 220px;
-  width: 220px;
-  transform: scale(1.1);
-  transition: transform 0.3s ease, height 0.3s ease, width 0.3s ease;
-}
-
-/* Clase para hacer la imagen circular */
-.circular {
-  border-radius: 50%;
-}
-
-
-.filtro-gris {
-  filter: grayscale(100%);
-}
-
-
-.page-gris {
-  filter: grayscale(100%);
-  transition: 300ms;
-}
-
-/* Clase para cambiar la disposición a 3 columnas */
-.tres-columnas {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-/* estilo botones */
-button.boton {
-  width: 120px;
-  height: 50px;
-  margin: 10px;
-  cursor: pointer;
-  background-color: #9A7197;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Estilo para los botones al pasar el ratón */
-button.boton:hover {
-  background-color: #886176;
-  transform: scale(1.05);
-}
-
-/* Estilo para los botones activos */
-button.boton.active {
-  background-color: #886176;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.btnCuadrado.active {
-  background-color: #886176;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-/*Imagenes*/
+/*Pantalla grande*/
 .grid-container {
   margin: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  justify-items: center;
-  transition: 300ms;
+  gap: 20px;
 }
 
-
-/* Pantalla mediana */
+/*Pantalla mediana*/
 @media (max-width: 1024px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-
-  button.boton {
-    width: 100px;
-    height: 45px;
-    font-size: 14px;
   }
 }
 
-/* Pantalla pequeña */
+/*Pantalla pequeña*/
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  button.boton {
-    width: 80px;
-    height: 40px;
-    font-size: 12px;
   }
 }
